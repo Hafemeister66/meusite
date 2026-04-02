@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Oferta Especial</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17542931869"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17542931869');
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id=GTM-PQGFBTLX'+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PQGFBTLX');</script>
-<!-- End Google Tag Manager -->
-
+  <title>Teste Botão</title>
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQGFBTLX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <h1>🔥 Teste do botão</h1>
+  <p>Clique no botão abaixo para testar o JavaScript:</p>
 
-  <h1>🔥 Emagreça de forma natural!</h1>
-  <p>Descubra o segredo do Crave Burner.</p>
+  <button id="btn-teste" style="padding:15px; font-size:18px;">
+    👉 TESTE CLICK
+  </button>
 
-  <a href="https://enjoyrightnow.shop/enjoyrightnowshop/crave-burner/index.html" target="_blank"
-  onclick="dataLayer.push({'event': 'click_oferta'});">
-    <button style="padding:15px; font-size:18px;">👉 VER OFERTA</button>
-  </a>
+  <script>
+    // Listener do botão
+    document.getElementById('btn-teste').addEventListener('click', function() {
+      console.log('O JavaScript está funcionando!');
+      alert('Evento disparado com sucesso!');
+    });
+  </script>
 
 </body>
 </html>
