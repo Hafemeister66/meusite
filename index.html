@@ -35,13 +35,17 @@
   </button>
 
   <script>
-    document.getElementById('btn-ver-oferta').addEventListener('click', function() {
-      // Envia evento para o GTM
+   document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('btn-ver-oferta').onclick = function() {
+      
+      // Envia evento para GTM
       dataLayer.push({'event': 'click_oferta'});
       console.log('Evento enviado para o GTM!');
 
-      // Abre o link
-     window.location.href = 'https://nplink.net/50427fja?subid=teste1';
+      // Redireciona
+      window.location.href = 'https://nplink.net/50427fja?subid=teste1';
+    };
+  }); 
   </script>
 
 </body>
